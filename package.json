@@ -1,6 +1,6 @@
 {
   "name": "nextjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "this is the starting of the nextjs repo",
   "main": "index.js",
   "scripts": {
