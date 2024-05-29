@@ -1,0 +1,619 @@
+{
+	"info": {
+		"_postman_id": "2f27e8ef-bc4a-4f77-b131-170487dd91cc",
+		"name": "WMP_CXO: Azure API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AZURE",
+			"item": [
+				{
+					"name": "forecast",
+					"id": "fc71fe6f-5014-474b-bf58-c7460553331d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1LyIsImlhdCI6MTY3ODg3NjkxNSwibmJmIjoxNjc4ODc2OTE1LCJleHAiOjE2Nzg4ODA4MTUsImFpbyI6IkUyWmdZSkNiY0NidndxYnkvMVZ1YXdYUEhUZWNCQUE9IiwiYXBwaWQiOiIwMzQ3ZjczOS1hMDdiLTQ0YzktYTc0NS05MDRiODI3MzNhMDIiLCJhcHBpZGFjciI6IjEiLCJncm91cHMiOlsiMDRkOTJkNTktNDg5Yi00YTQ5LWJiNmEtY2ZmMzJmNTkyNDAxIl0sImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzQ4NjdiYzRiLTRkYWQtNGQ2MC1hOWFkLWE3MmFhZWJlM2I1NS8iLCJpZHR5cCI6ImFwcCIsIm9pZCI6IjM5YmE4NTliLWVlOTMtNDcxOS1iOTQ0LTNkNzRmMGJhNmRkYSIsInJoIjoiMC5BWEVBUzd4blNLMU5ZRTJwcmFjcXJyNDdWVVpJZjNrQXV0ZFB1a1Bhd2ZqMk1CTnhBQUEuIiwic3ViIjoiMzliYTg1OWItZWU5My00NzE5LWI5NDQtM2Q3NGYwYmE2ZGRhIiwidGlkIjoiNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1IiwidXRpIjoiRmFIZ3NmLVdzRWV0SWVxN3BKWTZBQSIsInZlciI6IjEuMCIsInhtc19jYyI6WyJjcDEiXSwieG1zX3RjZHQiOjE2MjA4MTg3NjN9.jXYs4gtjxlaCN2sX5_H-xUsKACBXjNCXHBef6o4Q3tRC4OyYEYYZiAEZhVo1XtkCy-elQYrZVwcsD-ofcE14u-EmeaOZdiTwYKttywPEPMgGALROr6VZxOtPrT-HwO1n80kS806D-5iQc9iOFpY8RFnXByqiuvEaUf1XUQ-CUSG9X40ogrJqtAmm1EjxFC1uWAPBri40E3yozDf5WH2Y0IL09naAQ-0yjoaT0b3KVuPXGl9MIzB7PogZgwOaI4gd2WurTJ_lu1mVcXVa301WXL8ij_XEZBflv-e6GBpyEstVN5BKp_Y_YsD1PHXXauNv4Y5rx8y66HtELgIqcpS-Ww"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1LyIsImlhdCI6MTY3ODY4NjMxMCwibmJmIjoxNjc4Njg2MzEwLCJleHAiOjE2Nzg2OTAyMTAsImFpbyI6IkUyWmdZQ2dOMjNmalEvVzFET3NaSjhweXI5aTVBZ0E9IiwiYXBwaWQiOiIwMzQ3ZjczOS1hMDdiLTQ0YzktYTc0NS05MDRiODI3MzNhMDIiLCJhcHBpZGFjciI6IjEiLCJncm91cHMiOlsiMDRkOTJkNTktNDg5Yi00YTQ5LWJiNmEtY2ZmMzJmNTkyNDAxIl0sImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzQ4NjdiYzRiLTRkYWQtNGQ2MC1hOWFkLWE3MmFhZWJlM2I1NS8iLCJpZHR5cCI6ImFwcCIsIm9pZCI6IjM5YmE4NTliLWVlOTMtNDcxOS1iOTQ0LTNkNzRmMGJhNmRkYSIsInJoIjoiMC5BWEVBUzd4blNLMU5ZRTJwcmFjcXJyNDdWVVpJZjNrQXV0ZFB1a1Bhd2ZqMk1CTnhBQUEuIiwic3ViIjoiMzliYTg1OWItZWU5My00NzE5LWI5NDQtM2Q3NGYwYmE2ZGRhIiwidGlkIjoiNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1IiwidXRpIjoicTZ6NTg2MmRGazY4SFVWZWZvQ2tBQSIsInZlciI6IjEuMCIsInhtc19jYyI6WyJjcDEiXSwieG1zX3RjZHQiOjE2MjA4MTg3NjN9.fs-1w06hH8qAgM-819Wmal8oBmY_aSaoQ29-0iBU-tcnmI18-8uu0lJLe06mP6s6aegzGdsfO7n-tMrB1fJ27ol5w9K6jrzbAfdvxaSuZd-eXloyqVJLIEYwqXY9KwIjqIGDw_PXwxBE1F_xpkq66B68punI2k7KugJQZI0xQlRFz4SngW8ZfdfFM8i8txXkaXEhKU1MPURr6nucuN9B7KAsmucUzCgHO48O_qivEK_h92PI_mdHHakMIuWAINqge8X5pxl5DeKXheBxCP35ptFYWrde3OVrxKLzU4jFuXPZonc6CKen_xthTzSjtlEJtWRMVJnPR7ukU3fQBfAK8w",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"type\": \"Usage\",\n  \"timeframe\": \"Custom\",\n  \"timePeriod\": {\n    \"from\": \"2023-03-10T00:00:00+00:00\",\n    \"to\": \"2023-03-29T23:59:59+00:00\"\n  },\n  \"dataset\": {\n    \"granularity\": \"Monthly\",\n    \"aggregation\": {\n      \"totalCost\": {\n        \"name\": \"Cost\",\n        \"function\": \"Sum\"\n      }\n    },\n    \"filter\": {\n      \"and\": [\n        {\n          \"or\": [\n            {\n              \"dimensions\": {\n                \"name\": \"ResourceLocation\",\n                \"operator\": \"In\",\n                \"values\": [\n                  \"East US\",\n                  \"West Europe\"\n                ]\n              }\n            },\n            {\n              \"tags\": {\n                \"name\": \"Environment\",\n                \"operator\": \"In\",\n                \"values\": [\n                  \"UAT\",\n                  \"Prod\"\n                ]\n              }\n            }\n          ]\n        },\n        {\n          \"dimensions\": {\n            \"name\": \"ResourceGroup\",\n            \"operator\": \"In\",\n            \"values\": [\n              \"API\"\n            ]\n          }\n        }\n      ]\n    }\n  },\n  \"includeActualCost\": false,\n  \"includeFreshPartialCost\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/47b98f7f-f6d9-47e3-b192-a6d4fa9f6386/providers/Microsoft.CostManagement/forecast?api-version=2022-10-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"47b98f7f-f6d9-47e3-b192-a6d4fa9f6386",
+								"providers",
+								"Microsoft.CostManagement",
+								"forecast"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2022-10-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "retrieve retail prices for all Azure services",
+					"id": "c5d0bae1-4cfe-409a-819d-90eee42912de",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1LyIsImlhdCI6MTY3ODY4NjMxMCwibmJmIjoxNjc4Njg2MzEwLCJleHAiOjE2Nzg2OTAyMTAsImFpbyI6IkUyWmdZQ2dOMjNmalEvVzFET3NaSjhweXI5aTVBZ0E9IiwiYXBwaWQiOiIwMzQ3ZjczOS1hMDdiLTQ0YzktYTc0NS05MDRiODI3MzNhMDIiLCJhcHBpZGFjciI6IjEiLCJncm91cHMiOlsiMDRkOTJkNTktNDg5Yi00YTQ5LWJiNmEtY2ZmMzJmNTkyNDAxIl0sImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzQ4NjdiYzRiLTRkYWQtNGQ2MC1hOWFkLWE3MmFhZWJlM2I1NS8iLCJpZHR5cCI6ImFwcCIsIm9pZCI6IjM5YmE4NTliLWVlOTMtNDcxOS1iOTQ0LTNkNzRmMGJhNmRkYSIsInJoIjoiMC5BWEVBUzd4blNLMU5ZRTJwcmFjcXJyNDdWVVpJZjNrQXV0ZFB1a1Bhd2ZqMk1CTnhBQUEuIiwic3ViIjoiMzliYTg1OWItZWU5My00NzE5LWI5NDQtM2Q3NGYwYmE2ZGRhIiwidGlkIjoiNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1IiwidXRpIjoicTZ6NTg2MmRGazY4SFVWZWZvQ2tBQSIsInZlciI6IjEuMCIsInhtc19jYyI6WyJjcDEiXSwieG1zX3RjZHQiOjE2MjA4MTg3NjN9.fs-1w06hH8qAgM-819Wmal8oBmY_aSaoQ29-0iBU-tcnmI18-8uu0lJLe06mP6s6aegzGdsfO7n-tMrB1fJ27ol5w9K6jrzbAfdvxaSuZd-eXloyqVJLIEYwqXY9KwIjqIGDw_PXwxBE1F_xpkq66B68punI2k7KugJQZI0xQlRFz4SngW8ZfdfFM8i8txXkaXEhKU1MPURr6nucuN9B7KAsmucUzCgHO48O_qivEK_h92PI_mdHHakMIuWAINqge8X5pxl5DeKXheBxCP35ptFYWrde3OVrxKLzU4jFuXPZonc6CKen_xthTzSjtlEJtWRMVJnPR7ukU3fQBfAK8w"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&meterRegion='primary'",
+							"protocol": "https",
+							"host": [
+								"prices",
+								"azure",
+								"com"
+							],
+							"path": [
+								"api",
+								"retail",
+								"prices"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2023-01-01-preview"
+								},
+								{
+									"key": "meterRegion",
+									"value": "'primary'"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query the usage data for scope defined",
+					"id": "4fb272ea-b6b8-4761-9167-a836191af560",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1LyIsImlhdCI6MTY3ODg1ODY4NCwibmJmIjoxNjc4ODU4Njg0LCJleHAiOjE2Nzg4NjI1ODQsImFpbyI6IkUyWmdZQkRNOGJWZjVHbnhudW5kdzAvUHR5cW1BZ0E9IiwiYXBwaWQiOiIwMzQ3ZjczOS1hMDdiLTQ0YzktYTc0NS05MDRiODI3MzNhMDIiLCJhcHBpZGFjciI6IjEiLCJncm91cHMiOlsiMDRkOTJkNTktNDg5Yi00YTQ5LWJiNmEtY2ZmMzJmNTkyNDAxIl0sImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzQ4NjdiYzRiLTRkYWQtNGQ2MC1hOWFkLWE3MmFhZWJlM2I1NS8iLCJpZHR5cCI6ImFwcCIsIm9pZCI6IjM5YmE4NTliLWVlOTMtNDcxOS1iOTQ0LTNkNzRmMGJhNmRkYSIsInJoIjoiMC5BWEVBUzd4blNLMU5ZRTJwcmFjcXJyNDdWVVpJZjNrQXV0ZFB1a1Bhd2ZqMk1CTnhBQUEuIiwic3ViIjoiMzliYTg1OWItZWU5My00NzE5LWI5NDQtM2Q3NGYwYmE2ZGRhIiwidGlkIjoiNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1IiwidXRpIjoiZ2U4U0hQSWtpMEN6ZVdkdHFWUHNBQSIsInZlciI6IjEuMCIsInhtc19jYyI6WyJjcDEiXSwieG1zX3RjZHQiOjE2MjA4MTg3NjN9.LUrnJzIGoEiOdG5So0T2Scg1b-dB6hdMaJStM80jjBrwVQf6JjxcdBztb7UYiXXu9AGDWGmyPAqJCL2ZXr0OD2ltnuQj8zfSG9p9Hssp282PIYpcdrjy-mbuhUjhMOLnCdmARoIVemDeOQLsASDDmk26fMK8xjSINhQQXd4l9_cwz9c8zlNS6qp59DXe5lMfThN5abs1w6Duzob5n8nVm69i8T27_Y_kzMtI39DYSEgGie19bUEaL_uXZsLzBZr33-PSpxDtRNwsf_OrLrsaYZ27wC-J1VMI2ri496pr7Wt3S0KoI0hP7lsXSkOOL90tOdUj_YjUtSU9cCVR9iBLKg"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"type\": \"Usage\",\n  \"timeframe\": \"MonthToDate\",\n  \"dataset\": {\n    \"granularity\": \"Daily\",\n    \"filter\": {\n      \"and\": [\n        {\n          \"or\": [\n            {\n              \"dimensions\": {\n                \"name\": \"ResourceLocation\",\n                \"operator\": \"In\",\n                \"values\": [\n                  \"*\"\n                ]\n              }\n            },\n            {\n              \"tags\": {\n                \"name\": \"Environment\",\n                \"operator\": \"In\",\n                \"values\": [\n                  \"*\"\n                ]\n              }\n            }\n          ]\n        },\n        {\n          \"dimensions\": {\n            \"name\": \"ResourceGroup\",\n            \"operator\": \"In\",\n            \"values\": [\n              \"*\"\n            ]\n          }\n        }\n      ]\n    }\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/47b98f7f-f6d9-47e3-b192-a6d4fa9f6386/providers/Microsoft.CostManagement/query?api-version=2022-10-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"47b98f7f-f6d9-47e3-b192-a6d4fa9f6386",
+								"providers",
+								"Microsoft.CostManagement",
+								"query"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2022-10-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "recommendations for a subscription",
+					"id": "9132a1a9-38a1-45ae-a706-1d12f6aea528",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1LyIsImlhdCI6MTY3ODg1ODY4NCwibmJmIjoxNjc4ODU4Njg0LCJleHAiOjE2Nzg4NjI1ODQsImFpbyI6IkUyWmdZQkRNOGJWZjVHbnhudW5kdzAvUHR5cW1BZ0E9IiwiYXBwaWQiOiIwMzQ3ZjczOS1hMDdiLTQ0YzktYTc0NS05MDRiODI3MzNhMDIiLCJhcHBpZGFjciI6IjEiLCJncm91cHMiOlsiMDRkOTJkNTktNDg5Yi00YTQ5LWJiNmEtY2ZmMzJmNTkyNDAxIl0sImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzQ4NjdiYzRiLTRkYWQtNGQ2MC1hOWFkLWE3MmFhZWJlM2I1NS8iLCJpZHR5cCI6ImFwcCIsIm9pZCI6IjM5YmE4NTliLWVlOTMtNDcxOS1iOTQ0LTNkNzRmMGJhNmRkYSIsInJoIjoiMC5BWEVBUzd4blNLMU5ZRTJwcmFjcXJyNDdWVVpJZjNrQXV0ZFB1a1Bhd2ZqMk1CTnhBQUEuIiwic3ViIjoiMzliYTg1OWItZWU5My00NzE5LWI5NDQtM2Q3NGYwYmE2ZGRhIiwidGlkIjoiNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1IiwidXRpIjoiZ2U4U0hQSWtpMEN6ZVdkdHFWUHNBQSIsInZlciI6IjEuMCIsInhtc19jYyI6WyJjcDEiXSwieG1zX3RjZHQiOjE2MjA4MTg3NjN9.LUrnJzIGoEiOdG5So0T2Scg1b-dB6hdMaJStM80jjBrwVQf6JjxcdBztb7UYiXXu9AGDWGmyPAqJCL2ZXr0OD2ltnuQj8zfSG9p9Hssp282PIYpcdrjy-mbuhUjhMOLnCdmARoIVemDeOQLsASDDmk26fMK8xjSINhQQXd4l9_cwz9c8zlNS6qp59DXe5lMfThN5abs1w6Duzob5n8nVm69i8T27_Y_kzMtI39DYSEgGie19bUEaL_uXZsLzBZr33-PSpxDtRNwsf_OrLrsaYZ27wC-J1VMI2ri496pr7Wt3S0KoI0hP7lsXSkOOL90tOdUj_YjUtSU9cCVR9iBLKg"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/47b98f7f-f6d9-47e3-b192-a6d4fa9f6386/providers/Microsoft.Advisor/recommendations?api-version=2020-01-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"47b98f7f-f6d9-47e3-b192-a6d4fa9f6386",
+								"providers",
+								"Microsoft.Advisor",
+								"recommendations"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2020-01-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "COST advisor score",
+					"id": "e0dc0d7f-00ba-428c-b464-febd8900ac8a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1LyIsImlhdCI6MTY3ODg1NjA0NywibmJmIjoxNjc4ODU2MDQ3LCJleHAiOjE2Nzg4NTk5NDcsImFpbyI6IkUyWmdZSEE2c09WUUtkZnUyUFhYUFkvVmFDZG1BZ0E9IiwiYXBwaWQiOiIwMzQ3ZjczOS1hMDdiLTQ0YzktYTc0NS05MDRiODI3MzNhMDIiLCJhcHBpZGFjciI6IjEiLCJncm91cHMiOlsiMDRkOTJkNTktNDg5Yi00YTQ5LWJiNmEtY2ZmMzJmNTkyNDAxIl0sImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzQ4NjdiYzRiLTRkYWQtNGQ2MC1hOWFkLWE3MmFhZWJlM2I1NS8iLCJpZHR5cCI6ImFwcCIsIm9pZCI6IjM5YmE4NTliLWVlOTMtNDcxOS1iOTQ0LTNkNzRmMGJhNmRkYSIsInJoIjoiMC5BWEVBUzd4blNLMU5ZRTJwcmFjcXJyNDdWVVpJZjNrQXV0ZFB1a1Bhd2ZqMk1CTnhBQUEuIiwic3ViIjoiMzliYTg1OWItZWU5My00NzE5LWI5NDQtM2Q3NGYwYmE2ZGRhIiwidGlkIjoiNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1IiwidXRpIjoiR1VCOVdHcXFaRVNZNWlFYXlIem1BQSIsInZlciI6IjEuMCIsInhtc19jYyI6WyJjcDEiXSwieG1zX3RjZHQiOjE2MjA4MTg3NjN9.ANGXmVY-W00npllQito5hkRhp8wDIdfgBmAHfEruEsAaOYjzcqmM7-FHTBYTmbYhq9khvgkmtD7R5pi0ZHBT_UNoM7rD--14dQ1nw7Ef2hGyycjQrcx7XqcR9fnoj22IQaxs2IhiamcDCzsR3eC8jEiTLCD9Hp0WM3HN7XsWc3nocY1CMEErimjbm3nGy1HpQSesdy76Wac1xKsMSXmdNS0O1jhAD2zL_Ci7dKnRBKCMvD1QuDEiaYdsh7j25rNT0zHmxE0RGp6xF_wbwcXQd1na16FxE2i1GWLn8VajBbSqTvekV-7DBlvtZ8Nw3fbdNYGt731fS7cPt6Buh9cSXg"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/47b98f7f-f6d9-47e3-b192-a6d4fa9f6386/providers/Microsoft.Advisor/advisorScore/cost?api-version=2022-10-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"47b98f7f-f6d9-47e3-b192-a6d4fa9f6386",
+								"providers",
+								"Microsoft.Advisor",
+								"advisorScore",
+								"cost"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2022-10-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Aggregated Cost",
+					"id": "beecc511-bed0-40c2-aa6a-4b5984f0329d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1LyIsImlhdCI6MTY3ODg1ODY4NCwibmJmIjoxNjc4ODU4Njg0LCJleHAiOjE2Nzg4NjI1ODQsImFpbyI6IkUyWmdZQkRNOGJWZjVHbnhudW5kdzAvUHR5cW1BZ0E9IiwiYXBwaWQiOiIwMzQ3ZjczOS1hMDdiLTQ0YzktYTc0NS05MDRiODI3MzNhMDIiLCJhcHBpZGFjciI6IjEiLCJncm91cHMiOlsiMDRkOTJkNTktNDg5Yi00YTQ5LWJiNmEtY2ZmMzJmNTkyNDAxIl0sImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzQ4NjdiYzRiLTRkYWQtNGQ2MC1hOWFkLWE3MmFhZWJlM2I1NS8iLCJpZHR5cCI6ImFwcCIsIm9pZCI6IjM5YmE4NTliLWVlOTMtNDcxOS1iOTQ0LTNkNzRmMGJhNmRkYSIsInJoIjoiMC5BWEVBUzd4blNLMU5ZRTJwcmFjcXJyNDdWVVpJZjNrQXV0ZFB1a1Bhd2ZqMk1CTnhBQUEuIiwic3ViIjoiMzliYTg1OWItZWU5My00NzE5LWI5NDQtM2Q3NGYwYmE2ZGRhIiwidGlkIjoiNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1IiwidXRpIjoiZ2U4U0hQSWtpMEN6ZVdkdHFWUHNBQSIsInZlciI6IjEuMCIsInhtc19jYyI6WyJjcDEiXSwieG1zX3RjZHQiOjE2MjA4MTg3NjN9.LUrnJzIGoEiOdG5So0T2Scg1b-dB6hdMaJStM80jjBrwVQf6JjxcdBztb7UYiXXu9AGDWGmyPAqJCL2ZXr0OD2ltnuQj8zfSG9p9Hssp282PIYpcdrjy-mbuhUjhMOLnCdmARoIVemDeOQLsASDDmk26fMK8xjSINhQQXd4l9_cwz9c8zlNS6qp59DXe5lMfThN5abs1w6Duzob5n8nVm69i8T27_Y_kzMtI39DYSEgGie19bUEaL_uXZsLzBZr33-PSpxDtRNwsf_OrLrsaYZ27wC-J1VMI2ri496pr7Wt3S0KoI0hP7lsXSkOOL90tOdUj_YjUtSU9cCVR9iBLKg"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/47b98f7f-f6d9-47e3-b192-a6d4fa9f6386/providers/Microsoft.Consumption/aggregatedcost?api-version=2021-10-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"47b98f7f-f6d9-47e3-b192-a6d4fa9f6386",
+								"providers",
+								"Microsoft.Consumption",
+								"aggregatedcost"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2021-10-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Savings Plan - List All",
+					"id": "ce2f039c-69b2-44e3-852a-8363780e64a1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1LyIsImlhdCI6MTY3ODc5MjU0NywibmJmIjoxNjc4NzkyNTQ3LCJleHAiOjE2Nzg3OTY0NDcsImFpbyI6IkUyWmdZTkIydjVYY0krZzAwM25iblVsL250OWtCQUE9IiwiYXBwaWQiOiIwMzQ3ZjczOS1hMDdiLTQ0YzktYTc0NS05MDRiODI3MzNhMDIiLCJhcHBpZGFjciI6IjEiLCJncm91cHMiOlsiMDRkOTJkNTktNDg5Yi00YTQ5LWJiNmEtY2ZmMzJmNTkyNDAxIl0sImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzQ4NjdiYzRiLTRkYWQtNGQ2MC1hOWFkLWE3MmFhZWJlM2I1NS8iLCJpZHR5cCI6ImFwcCIsIm9pZCI6IjM5YmE4NTliLWVlOTMtNDcxOS1iOTQ0LTNkNzRmMGJhNmRkYSIsInJoIjoiMC5BWEVBUzd4blNLMU5ZRTJwcmFjcXJyNDdWVVpJZjNrQXV0ZFB1a1Bhd2ZqMk1CTnhBQUEuIiwic3ViIjoiMzliYTg1OWItZWU5My00NzE5LWI5NDQtM2Q3NGYwYmE2ZGRhIiwidGlkIjoiNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1IiwidXRpIjoibW1kWnpteUhPMFNLZ2NrNVo4NTRBQSIsInZlciI6IjEuMCIsInhtc19jYyI6WyJjcDEiXSwieG1zX3RjZHQiOjE2MjA4MTg3NjN9.OGGeoLxdhwwpfCojXbwgulinPVL5O_YycLW4mrqQ9UYT-jdctFWzBkv-pskYP7RUCGXml4CDAx6RAHbk4PDApqJCGz4wchP_euUqvsYeRnhLD1qnz7Snjaarh4iFImCDiDDZq1gezjCwnsdrfXfE_XIO6d0C2f-Vo9r98QsdXNO1arM854YzXjmUkh2wp2drBGT-WxyuGAAjexlDIO75OizIzv-HR5JWfqQhgLlpdIQpsz4DKD9_iaSHY5-y9RbGMwLwcaKcZxesiN_r1-UsslPGDVz5xCPfi_bVICM1iAklw67EhuYWt2hgg9ifRt7VyIj8zNOXYx1K9v6hm9Ym6g"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://management.azure.com/providers/Microsoft.BillingBenefits/savingsPlans?api-version=2022-11-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"providers",
+								"Microsoft.BillingBenefits",
+								"savingsPlans"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2022-11-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usage Details - List",
+					"id": "f70cc90a-4930-4e79-bad6-3f962447d434",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1LyIsImlhdCI6MTY3ODg3NjU2NCwibmJmIjoxNjc4ODc2NTY0LCJleHAiOjE2Nzg4ODA0NjQsImFpbyI6IkUyWmdZTGhlOENCSksvR3JmcGR0VlhCcHZ5c3JBQT09IiwiYXBwaWQiOiIwMzQ3ZjczOS1hMDdiLTQ0YzktYTc0NS05MDRiODI3MzNhMDIiLCJhcHBpZGFjciI6IjEiLCJncm91cHMiOlsiMDRkOTJkNTktNDg5Yi00YTQ5LWJiNmEtY2ZmMzJmNTkyNDAxIl0sImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzQ4NjdiYzRiLTRkYWQtNGQ2MC1hOWFkLWE3MmFhZWJlM2I1NS8iLCJpZHR5cCI6ImFwcCIsIm9pZCI6IjM5YmE4NTliLWVlOTMtNDcxOS1iOTQ0LTNkNzRmMGJhNmRkYSIsInJoIjoiMC5BWEVBUzd4blNLMU5ZRTJwcmFjcXJyNDdWVVpJZjNrQXV0ZFB1a1Bhd2ZqMk1CTnhBQUEuIiwic3ViIjoiMzliYTg1OWItZWU5My00NzE5LWI5NDQtM2Q3NGYwYmE2ZGRhIiwidGlkIjoiNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1IiwidXRpIjoiVkMtcjUtbHFCa3FhV2hNczRfVFZBQSIsInZlciI6IjEuMCIsInhtc19jYyI6WyJjcDEiXSwieG1zX3RjZHQiOjE2MjA4MTg3NjN9.SLTEz_m-WroEct7JHLdFfN4PNdHquas3RErQ65NpyVNgl914HxDZqRiCDYsGSbLIwHa16xm0BofqaqgIiR2e0nhljGPGMb02iElyebREdrCR80fNmUJliYM5XicXRr3bZOckMvpNC7WPLGjOmHNg6twXK97RoyhVAcMUYSlOP8JD2isr_euWeWIv6ckEpzqtNi8vLveOQvJrQDC9um5Lw77r7PryciSbmJLHBFcWxp7uQnt24hY1ecHE-o2vts-oNpLX93YoNPeEvfeshOSDDCwGQ563oC8BN7yDceuMkirQR4lq-j-Y-37JiqGuQj7q8D-powvJ7NlQ2eAywIDBQQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/47b98f7f-f6d9-47e3-b192-a6d4fa9f6386/providers/Microsoft.Consumption/usageDetails?$filter=properties/usageStart eq '2023-01-01' and properties/usageEnd eq '2023-03-15'&api-version=2021-10-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"47b98f7f-f6d9-47e3-b192-a6d4fa9f6386",
+								"providers",
+								"Microsoft.Consumption",
+								"usageDetails"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "properties/usageStart eq '2023-01-01' and properties/usageEnd eq '2023-03-15'"
+								},
+								{
+									"key": "api-version",
+									"value": "2021-10-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "341b8e14-e893-4467-9181-f46315adcb53",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1LyIsImlhdCI6MTY3ODg2MjY4MSwibmJmIjoxNjc4ODYyNjgxLCJleHAiOjE2Nzg4NjY1ODEsImFpbyI6IkUyWmdZRmlTc0tJdnVEUE03TldCM1ZWTU84OWxBZ0E9IiwiYXBwaWQiOiIwMzQ3ZjczOS1hMDdiLTQ0YzktYTc0NS05MDRiODI3MzNhMDIiLCJhcHBpZGFjciI6IjEiLCJncm91cHMiOlsiMDRkOTJkNTktNDg5Yi00YTQ5LWJiNmEtY2ZmMzJmNTkyNDAxIl0sImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzQ4NjdiYzRiLTRkYWQtNGQ2MC1hOWFkLWE3MmFhZWJlM2I1NS8iLCJpZHR5cCI6ImFwcCIsIm9pZCI6IjM5YmE4NTliLWVlOTMtNDcxOS1iOTQ0LTNkNzRmMGJhNmRkYSIsInJoIjoiMC5BWEVBUzd4blNLMU5ZRTJwcmFjcXJyNDdWVVpJZjNrQXV0ZFB1a1Bhd2ZqMk1CTnhBQUEuIiwic3ViIjoiMzliYTg1OWItZWU5My00NzE5LWI5NDQtM2Q3NGYwYmE2ZGRhIiwidGlkIjoiNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1IiwidXRpIjoia2ZUWGZZQ0ZaMGViaUtraDc2SnBBQSIsInZlciI6IjEuMCIsInhtc19jYyI6WyJjcDEiXSwieG1zX3RjZHQiOjE2MjA4MTg3NjN9.V17xUSLZzRU1nKec-O9DU1toh8TKfMc9XVY80vzuAWseQmr8MIAhFulY3e1NlKUy0e-rGjxyGMZ5oJY0ikj5scissGaTOJTmsq3lwm4DJvsN2qVoQlVB1TRn2ZJty8UdRB0c07cL79y9jNFewmix1KV8ZyoPEAxOztIW6GtOhM23Sy_CKeOkxntbyCEPVUUSiyCVOuHBuAPun9MqWWbZE85AxTlSytYVY6Ynp6bRZgjT54Kk1zbFhnmHNZzPksCymkM1eZkD9PrwGlonD3ACQ7TYqpu5i_n7fyFUw6am8Iga5omuok7BsyxnYNeu4niO7X3xWf2KnItX0mSuln-zBQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://management.azure.com/providers/Microsoft.Billing/billingAccounts/{billingAccountName}/billingSubscriptions/47b98f7f-f6d9-47e3-b192-a6d4fa9f6386/invoices?periodStartDate={periodStartDate}&periodEndDate={periodEndDate}&api-version=2019-10-01-preview",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"providers",
+								"Microsoft.Billing",
+								"billingAccounts",
+								"{billingAccountName}",
+								"billingSubscriptions",
+								"47b98f7f-f6d9-47e3-b192-a6d4fa9f6386",
+								"invoices"
+							],
+							"query": [
+								{
+									"key": "periodStartDate",
+									"value": "{periodStartDate}"
+								},
+								{
+									"key": "periodEndDate",
+									"value": "{periodEndDate}"
+								},
+								{
+									"key": "api-version",
+									"value": "2019-10-01-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIST -  subscriptions",
+					"id": "6ddea035-0206-47a3-b1bb-1b28e0cc6907",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1LyIsImlhdCI6MTY3ODg2MjY4MSwibmJmIjoxNjc4ODYyNjgxLCJleHAiOjE2Nzg4NjY1ODEsImFpbyI6IkUyWmdZRmlTc0tJdnVEUE03TldCM1ZWTU84OWxBZ0E9IiwiYXBwaWQiOiIwMzQ3ZjczOS1hMDdiLTQ0YzktYTc0NS05MDRiODI3MzNhMDIiLCJhcHBpZGFjciI6IjEiLCJncm91cHMiOlsiMDRkOTJkNTktNDg5Yi00YTQ5LWJiNmEtY2ZmMzJmNTkyNDAxIl0sImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzQ4NjdiYzRiLTRkYWQtNGQ2MC1hOWFkLWE3MmFhZWJlM2I1NS8iLCJpZHR5cCI6ImFwcCIsIm9pZCI6IjM5YmE4NTliLWVlOTMtNDcxOS1iOTQ0LTNkNzRmMGJhNmRkYSIsInJoIjoiMC5BWEVBUzd4blNLMU5ZRTJwcmFjcXJyNDdWVVpJZjNrQXV0ZFB1a1Bhd2ZqMk1CTnhBQUEuIiwic3ViIjoiMzliYTg1OWItZWU5My00NzE5LWI5NDQtM2Q3NGYwYmE2ZGRhIiwidGlkIjoiNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1IiwidXRpIjoia2ZUWGZZQ0ZaMGViaUtraDc2SnBBQSIsInZlciI6IjEuMCIsInhtc19jYyI6WyJjcDEiXSwieG1zX3RjZHQiOjE2MjA4MTg3NjN9.V17xUSLZzRU1nKec-O9DU1toh8TKfMc9XVY80vzuAWseQmr8MIAhFulY3e1NlKUy0e-rGjxyGMZ5oJY0ikj5scissGaTOJTmsq3lwm4DJvsN2qVoQlVB1TRn2ZJty8UdRB0c07cL79y9jNFewmix1KV8ZyoPEAxOztIW6GtOhM23Sy_CKeOkxntbyCEPVUUSiyCVOuHBuAPun9MqWWbZE85AxTlSytYVY6Ynp6bRZgjT54Kk1zbFhnmHNZzPksCymkM1eZkD9PrwGlonD3ACQ7TYqpu5i_n7fyFUw6am8Iga5omuok7BsyxnYNeu4niO7X3xWf2KnItX0mSuln-zBQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://management.azure.com/subscriptions?api-version=2020-01-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2020-01-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIST - billingAccounts",
+					"id": "d7782d7a-3bbe-449c-9310-1291e60f6437",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1LyIsImlhdCI6MTY3ODg2MjY4MSwibmJmIjoxNjc4ODYyNjgxLCJleHAiOjE2Nzg4NjY1ODEsImFpbyI6IkUyWmdZRmlTc0tJdnVEUE03TldCM1ZWTU84OWxBZ0E9IiwiYXBwaWQiOiIwMzQ3ZjczOS1hMDdiLTQ0YzktYTc0NS05MDRiODI3MzNhMDIiLCJhcHBpZGFjciI6IjEiLCJncm91cHMiOlsiMDRkOTJkNTktNDg5Yi00YTQ5LWJiNmEtY2ZmMzJmNTkyNDAxIl0sImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzQ4NjdiYzRiLTRkYWQtNGQ2MC1hOWFkLWE3MmFhZWJlM2I1NS8iLCJpZHR5cCI6ImFwcCIsIm9pZCI6IjM5YmE4NTliLWVlOTMtNDcxOS1iOTQ0LTNkNzRmMGJhNmRkYSIsInJoIjoiMC5BWEVBUzd4blNLMU5ZRTJwcmFjcXJyNDdWVVpJZjNrQXV0ZFB1a1Bhd2ZqMk1CTnhBQUEuIiwic3ViIjoiMzliYTg1OWItZWU5My00NzE5LWI5NDQtM2Q3NGYwYmE2ZGRhIiwidGlkIjoiNDg2N2JjNGItNGRhZC00ZDYwLWE5YWQtYTcyYWFlYmUzYjU1IiwidXRpIjoia2ZUWGZZQ0ZaMGViaUtraDc2SnBBQSIsInZlciI6IjEuMCIsInhtc19jYyI6WyJjcDEiXSwieG1zX3RjZHQiOjE2MjA4MTg3NjN9.V17xUSLZzRU1nKec-O9DU1toh8TKfMc9XVY80vzuAWseQmr8MIAhFulY3e1NlKUy0e-rGjxyGMZ5oJY0ikj5scissGaTOJTmsq3lwm4DJvsN2qVoQlVB1TRn2ZJty8UdRB0c07cL79y9jNFewmix1KV8ZyoPEAxOztIW6GtOhM23Sy_CKeOkxntbyCEPVUUSiyCVOuHBuAPun9MqWWbZE85AxTlSytYVY6Ynp6bRZgjT54Kk1zbFhnmHNZzPksCymkM1eZkD9PrwGlonD3ACQ7TYqpu5i_n7fyFUw6am8Iga5omuok7BsyxnYNeu4niO7X3xWf2KnItX0mSuln-zBQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://management.azure.com/providers/Microsoft.Billing/billingAccounts?api-version=2019-10-01-preview",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"providers",
+								"Microsoft.Billing",
+								"billingAccounts"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2019-10-01-preview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "b3d01aa5-80fc-480e-9e76-399e0f7c705f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Azure Costing API",
+					"id": "b6e0fde8-d5c4-41c3-a04a-b1a39b27275e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Storage'",
+							"protocol": "https",
+							"host": [
+								"prices",
+								"azure",
+								"com"
+							],
+							"path": [
+								"api",
+								"retail",
+								"prices"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "serviceName eq 'Storage'"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Azure vm configuration",
+					"id": "ac0763d3-6ee2-4d3d-a0e9-58548ef84223",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjlHbW55RlBraGMzaE91UjIybXZTdmduTG83WSIsImtpZCI6IjlHbW55RlBraGMzaE91UjIybXZTdmduTG83WSJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuY29yZS53aW5kb3dzLm5ldC8iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9hYThmOWNlNS03MjE2LTRiMjAtYmEzNi1hODMxYjI4NDE5ZmMvIiwiaWF0IjoxNjk4MzEwNzA1LCJuYmYiOjE2OTgzMTA3MDUsImV4cCI6MTY5ODMxNTU2OCwiYWNyIjoiMSIsImFpbyI6IkFaUUFhLzhVQUFBQTFaMTQ1RWtPbzhIdktkSy9XZFNnVXBGOERBVSsrYUVLQklUcUo3Vzc5WlY3VlI2blFWSEpEODR6NFVjZ2NGaW1kbXFBWmlaLzZmODlPVmNQeFB4UWNUd0tZUVFnMHdrNHpPclM3Q3EzdWs2VVZLZjBBbFYzNlJSamFxbEJWRTRqYlZJeGdETG9LT3l6dnRYdHNJTkozNEJtTS9SSVVJNm5MaW5PalJmQ2Vwa1RveHNvTXBvcTZjWm43V21HcHdqNiIsImFsdHNlY2lkIjoiNTo6MTAwMzIwMDI4QTAyQjAzMSIsImFtciI6WyJwd2QiLCJtZmEiXSwiYXBwaWQiOiIwNGIwNzc5NS04ZGRiLTQ2MWEtYmJlZS0wMmY5ZTFiZjdiNDYiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6ImhyaXRoaWtoaXJhbndhckB3aW5nbWFucGFydG5lcnMuY29tIiwiZ3JvdXBzIjpbIjg5NDQxNjYwLWZlNDAtNDBhNi04Y2JjLTUxZWUyM2E0MzEwOCJdLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC80ODY3YmM0Yi00ZGFkLTRkNjAtYTlhZC1hNzJhYWViZTNiNTUvIiwiaWR0eXAiOiJ1c2VyIiwiaXBhZGRyIjoiNDkuMjQ5LjIxLjg2IiwibmFtZSI6IkhyaXRoaWsgSGlyYW53YXIiLCJvaWQiOiI5NDJmMmUxNi03ODUzLTQxMWEtYjA1ZS0yOGNkMjJmYjIyYjQiLCJwdWlkIjoiMTAwMzIwMDJCNEY5NTU4MSIsInJoIjoiMC5BUTRBNVp5UHFoWnlJRXU2TnFneHNvUVpfRVpJZjNrQXV0ZFB1a1Bhd2ZqMk1CTU9BT2cuIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic3ViIjoiRTZOTXNTcnVjcjhaaGZLQUZPclhxeEw4dDBXRkxUUEhVSE1NRHNXV2k4WSIsInRpZCI6ImFhOGY5Y2U1LTcyMTYtNGIyMC1iYTM2LWE4MzFiMjg0MTlmYyIsInVuaXF1ZV9uYW1lIjoiaHJpdGhpa2hpcmFud2FyQHdpbmdtYW5wYXJ0bmVycy5jb20iLCJ1dGkiOiJid3VMZnVKX1hFV3dNZFFST3JnX0FBIiwidmVyIjoiMS4wIiwid2lkcyI6WyIxM2JkMWM3Mi02ZjRhLTRkY2YtOTg1Zi0xOGQzYjgwZjIwOGEiXSwieG1zX2NhZSI6IjEiLCJ4bXNfY2MiOlsiQ1AxIl0sInhtc190Y2R0IjoxMzkyMzI0MDQ1fQ.oUkp67oz4496UJ2G7Bga56m0ISqlo0U7DLXosbNd9U4YFc5DxKlCGnsoRtrJhZUcrK03QL1BvKBmyNiDKKEI-f0tkD2qhPvIpHdmgT5wpaTeHe3qbOZ3a-OMBks3HkzsMTlLF4xYX0eJ6HvbLnz00rAsDBr2IeWWMOMxovMDxIendNuXtzuNOUg8-M9tN7clZHClgcTg4Io0yoH-mPUDkWY53UIe_8CWTv2V1o3yb1AjryRL-_vRMTUUCoFtOU1X_tTt8E4hw5d_DumoQVdFSmC9QXJfB9diu_MDxW35XMQGmKA3dE4P4hGaXMT_NkNIx0BFrzsH1WkVq7pyZtOXVw"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/b493246a-acdc-43bf-b892-46c3eb850a75/providers/Microsoft.Compute/locations/East US/vmSizes?api-version=2022-03-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"b493246a-acdc-43bf-b892-46c3eb850a75",
+								"providers",
+								"Microsoft.Compute",
+								"locations",
+								"East US",
+								"vmSizes"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2022-03-01"
+								}
+							]
+						},
+						"description": "Azure vm configuration"
+					},
+					"response": []
+				},
+				{
+					"name": "Azure Vm configuration 2",
+					"id": "e5966875-aaea-4805-ae5b-6b620b029370",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjlHbW55RlBraGMzaE91UjIybXZTdmduTG83WSIsImtpZCI6IjlHbW55RlBraGMzaE91UjIybXZTdmduTG83WSJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuY29yZS53aW5kb3dzLm5ldC8iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9hYThmOWNlNS03MjE2LTRiMjAtYmEzNi1hODMxYjI4NDE5ZmMvIiwiaWF0IjoxNjk4MzEwNzA1LCJuYmYiOjE2OTgzMTA3MDUsImV4cCI6MTY5ODMxNTU2OCwiYWNyIjoiMSIsImFpbyI6IkFaUUFhLzhVQUFBQTFaMTQ1RWtPbzhIdktkSy9XZFNnVXBGOERBVSsrYUVLQklUcUo3Vzc5WlY3VlI2blFWSEpEODR6NFVjZ2NGaW1kbXFBWmlaLzZmODlPVmNQeFB4UWNUd0tZUVFnMHdrNHpPclM3Q3EzdWs2VVZLZjBBbFYzNlJSamFxbEJWRTRqYlZJeGdETG9LT3l6dnRYdHNJTkozNEJtTS9SSVVJNm5MaW5PalJmQ2Vwa1RveHNvTXBvcTZjWm43V21HcHdqNiIsImFsdHNlY2lkIjoiNTo6MTAwMzIwMDI4QTAyQjAzMSIsImFtciI6WyJwd2QiLCJtZmEiXSwiYXBwaWQiOiIwNGIwNzc5NS04ZGRiLTQ2MWEtYmJlZS0wMmY5ZTFiZjdiNDYiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6ImhyaXRoaWtoaXJhbndhckB3aW5nbWFucGFydG5lcnMuY29tIiwiZ3JvdXBzIjpbIjg5NDQxNjYwLWZlNDAtNDBhNi04Y2JjLTUxZWUyM2E0MzEwOCJdLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC80ODY3YmM0Yi00ZGFkLTRkNjAtYTlhZC1hNzJhYWViZTNiNTUvIiwiaWR0eXAiOiJ1c2VyIiwiaXBhZGRyIjoiNDkuMjQ5LjIxLjg2IiwibmFtZSI6IkhyaXRoaWsgSGlyYW53YXIiLCJvaWQiOiI5NDJmMmUxNi03ODUzLTQxMWEtYjA1ZS0yOGNkMjJmYjIyYjQiLCJwdWlkIjoiMTAwMzIwMDJCNEY5NTU4MSIsInJoIjoiMC5BUTRBNVp5UHFoWnlJRXU2TnFneHNvUVpfRVpJZjNrQXV0ZFB1a1Bhd2ZqMk1CTU9BT2cuIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic3ViIjoiRTZOTXNTcnVjcjhaaGZLQUZPclhxeEw4dDBXRkxUUEhVSE1NRHNXV2k4WSIsInRpZCI6ImFhOGY5Y2U1LTcyMTYtNGIyMC1iYTM2LWE4MzFiMjg0MTlmYyIsInVuaXF1ZV9uYW1lIjoiaHJpdGhpa2hpcmFud2FyQHdpbmdtYW5wYXJ0bmVycy5jb20iLCJ1dGkiOiJid3VMZnVKX1hFV3dNZFFST3JnX0FBIiwidmVyIjoiMS4wIiwid2lkcyI6WyIxM2JkMWM3Mi02ZjRhLTRkY2YtOTg1Zi0xOGQzYjgwZjIwOGEiXSwieG1zX2NhZSI6IjEiLCJ4bXNfY2MiOlsiQ1AxIl0sInhtc190Y2R0IjoxMzkyMzI0MDQ1fQ.oUkp67oz4496UJ2G7Bga56m0ISqlo0U7DLXosbNd9U4YFc5DxKlCGnsoRtrJhZUcrK03QL1BvKBmyNiDKKEI-f0tkD2qhPvIpHdmgT5wpaTeHe3qbOZ3a-OMBks3HkzsMTlLF4xYX0eJ6HvbLnz00rAsDBr2IeWWMOMxovMDxIendNuXtzuNOUg8-M9tN7clZHClgcTg4Io0yoH-mPUDkWY53UIe_8CWTv2V1o3yb1AjryRL-_vRMTUUCoFtOU1X_tTt8E4hw5d_DumoQVdFSmC9QXJfB9diu_MDxW35XMQGmKA3dE4P4hGaXMT_NkNIx0BFrzsH1WkVq7pyZtOXVw"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/b493246a-acdc-43bf-b892-46c3eb850a75/providers/Microsoft.Batch/locations/East US/virtualMachineSkus?api-version=2023-05-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"b493246a-acdc-43bf-b892-46c3eb850a75",
+								"providers",
+								"Microsoft.Batch",
+								"locations",
+								"East US",
+								"virtualMachineSkus"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2023-05-01"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "53b7f137-1f39-47cc-83c4-62ab08d4a889"
+		}
+	]
+}
