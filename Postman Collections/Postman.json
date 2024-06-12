@@ -653,6 +653,41 @@
 						"header": []
 					},
 					"response": []
+				},
+				{
+					"name": "https://jsonplaceholder.typicode.com/posts",
+					"id": "f3272f4b-e476-426d-b23d-d36fdad51e77",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true,
+							"content-length": true
+						},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"foo\",\n  \"body\": \"bar\",\n  \"userId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://jsonplaceholder.typicode.com/posts"
+					},
+					"response": []
 				}
 			],
 			"id": "53b7f137-1f39-47cc-83c4-62ab08d4a889"
