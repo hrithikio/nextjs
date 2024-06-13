@@ -688,6 +688,28 @@
 						"url": "https://jsonplaceholder.typicode.com/posts"
 					},
 					"response": []
+				},
+				{
+					"name": "https://reqres.in/api/users",
+					"id": "c61baa89-37c3-480b-a419-d63213858bbd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://reqres.in/api/users"
+					},
+					"response": []
 				}
 			],
 			"id": "53b7f137-1f39-47cc-83c4-62ab08d4a889"
