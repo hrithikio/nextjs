@@ -722,7 +722,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "// {\n//     \"name\": \"WMP sweet\",\n//     \"item_code\": \"efg-3\",\n//     \"country\": \"India\",\n//     \"category\": \"Cheese\",\n//     \"tags\": [\"Milk\", \"Buffello\"],\n//     \"default_price\": 500\n// }",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
