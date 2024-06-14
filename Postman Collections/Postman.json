@@ -722,7 +722,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\n    \"name\": \"{{name}}\",\n    \"item_code\": \"{{item_code}}\",\n    \"country\": \"{{country}}\",\n    \"category\": \"{{category}}\",\n    \"tags\": \"{{tags}}\",\n    \"default_price\": \"{{default_price}}\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
