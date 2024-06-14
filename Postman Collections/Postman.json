@@ -710,6 +710,28 @@
 						"url": "https://reqres.in/api/users"
 					},
 					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/admin/product",
+					"id": "150cd36f-a333-4c66-9397-332aa700ccce",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "// {\n//     \"name\": \"WMP sweet\",\n//     \"item_code\": \"efg-3\",\n//     \"country\": \"India\",\n//     \"category\": \"Cheese\",\n//     \"tags\": [\"Milk\", \"Buffello\"],\n//     \"default_price\": 500\n// }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/admin/product"
+					},
+					"response": []
 				}
 			],
 			"id": "53b7f137-1f39-47cc-83c4-62ab08d4a889"
